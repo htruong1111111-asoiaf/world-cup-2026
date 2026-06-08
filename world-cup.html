@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FIFA World Cup 2026</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background: #f5f5f5;
+        color: #333;
+      } /* MENU */
+      nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.85);
+        padding: 15px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+      }
+      .logo {
+        color: white;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+      }
+      nav ul li {
+        margin-left: 25px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+      nav ul li a:hover {
+        color: #ffd700;
+      } /* HERO */
+      .hero {
+        height: 100vh;
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+          url("https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1600&q=80");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+      }
+      .hero-content h1 {
+        font-size: 70px;
+        margin-bottom: 20px;
+        text-shadow: 3px 3px 10px black;
+      }
+      .hero-content p {
+        font-size: 24px;
+        margin-bottom: 30px;
+      }
+      .btn {
+        background: #ffd700;
+        color: black;
+        padding: 15px 35px;
+        text-decoration: none;
+        border-radius: 30px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+      .btn:hover {
+        background: white;
+      } /* SECTION */
+      section {
+        padding: 90px 10%;
+      }
+      .section-title {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 40px;
+        color: #0047ab;
+      } /* ABOUT */
+      .about {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .about img {
+        width: 500px;
+        max-width: 100%;
+        border-radius: 15px;
+      }
+      .about-text {
+        flex: 1;
+        font-size: 18px;
+        line-height: 1.8;
+      } /* CARDS */
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+      }
+      .card {
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        transition: 0.4s;
+      }
+      .card:hover {
+        transform: translateY(-10px);
+      }
+      .card h3 {
+        margin-bottom: 15px;
+        color: #0047ab;
+      } /* GALLERY */
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+      }
+      .gallery img {
+        width: 100%;
+        border-radius: 15px;
+        transition: 0.4s;
+      }
+      .gallery img:hover {
+        transform: scale(1.05);
+      } /* FOOTER */
+      footer {
+        background: #111;
+        color: white;
+        text-align: center;
+        padding: 30px;
+      }
+      footer p {
+        margin: 10px 0;
+      } /* RESPONSIVE */
+      @media (max-width: 768px) {
+        .hero-content h1 {
+          font-size: 45px;
+        }
+        .hero-content p {
+          font-size: 18px;
+        }
+        nav {
+          padding: 15px;
+        }
+        nav ul li {
+          margin-left: 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">WORLD CUP 2026</div>
+      <ul>
+        <li><a href="#home">Trang chủ</a></li>
+        <li><a href="#about">Giới thiệu</a></li>
+        <li><a href="#info">Thông tin</a></li>
+        <li><a href="#gallery">Hình ảnh</a></li>
+      </ul>
+    </nav>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>FIFA WORLD CUP 2026</h1>
+        <p>Giải bóng đá lớn nhất hành tinh</p>
+        <a href="#about" class="btn">Khám phá ngay</a>
+      </div>
+    </section>
+    <!-- ABOUT -->
+    <section id="about">
+      <h2 class="section-title">Giới thiệu</h2>
+      <div class="about">
+        <img
+          src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=1000&q=80"
+        />
+        <div class="about-text">
+          <p>
+            FIFA World Cup 2026 là kỳ World Cup đầu tiên có 48 đội tuyển tham dự
+            thay vì 32 đội như trước đây.
+          </p>
+          <br />
+          <p>
+            Giải đấu được tổ chức tại ba quốc gia: Hoa Kỳ, Canada và Mexico. Đây
+            cũng là lần đầu tiên World Cup được đồng tổ chức bởi ba nước khác
+            nhau.
+          </p>
+          <br />
+          <p>
+            Hàng triệu người hâm mộ trên toàn thế giới sẽ theo dõi những trận
+            cầu đỉnh cao và những khoảnh khắc lịch sử của bóng đá thế giới.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- INFO -->
+    <section id="info">
+      <h2 class="section-title">Thông tin nổi bật</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>48 Đội Tuyển</h3>
+          <p>Kỳ World Cup đầu tiên có 48 đội tham dự.</p>
+        </div>
+        <div class="card">
+          <h3>3 Quốc Gia Chủ Nhà</h3>
+          <p>Mỹ, Canada và Mexico cùng đăng cai tổ chức.</p>
+        </div>
+        <div class="card">
+          <h3>16 Thành Phố</h3>
+          <p>Các trận đấu diễn ra tại 16 thành phố lớn.</p>
+        </div>
+        <div class="card">
+          <h3>Hàng Triệu Cổ Động Viên</h3>
+          <p>Sự kiện thể thao được theo dõi nhiều nhất thế giới.</p>
+        </div>
+      </div>
+    </section>
+    <!-- GALLERY -->
+    <section id="gallery">
+      <h2 class="section-title">Khoảnh khắc bóng đá</h2>
+      <div class="gallery">
+        <img
+          src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=800&q=80"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1518091043644-c1d4457512c6?auto=format&fit=crop&w=800&q=80"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1575361204480-aadea25e6e68?auto=format&fit=crop&w=800&q=80"
+        />
+      </div>
+    </section>
+    <footer>
+      <h3>FIFA WORLD CUP 2026</h3>
+      <p>One Game. One World.</p>
+      <p>© 2026 World Cup Fan Website</p>
+    </footer>
+  </body>
+</html>
